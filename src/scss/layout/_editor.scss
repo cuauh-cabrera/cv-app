@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+.editor-container{
+    border-color: $thirth-color;
+    border-style: double;
+    padding: 0.5rem;
+    margin-top: 10rem;
+    width: 50%;
+    height: 95vh;
+    @include flexbox(column,wrap,center,flex-start,1rem)
+}
+
+.general-info{
+    padding: 0.5rem;
+    width: 100%;
+    @include flexbox(column,nowrap,center,flex-start,0.5rem)
+}
+
+.general-info > h2 {
+    width: 100%;
+    padding-left: 1rem;
+    text-align: start;
+}
+

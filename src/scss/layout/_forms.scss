@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+
+.general-info__form {
+    width: 100%;
+    padding: 0.5rem;
+    @include flexbox(column,wrap,space-between,center,1rem)
+}
+
+.general-info__form-wrapper{
+    width: 100%;
+    padding: 0.5rem;
+    @include flexbox(column,wrap,space-between,flex-start,0.75rem)
+}
+
+.general-info__form-wrapper > label {
+    padding: 0.25rem;
+    width: 100%;
+    @include flexbox(row,nowrap,space-between,center,0)
+}
+
+.general-info__form-wrapper > label > input {
+    width: 80%;
+    padding: 1rem;
+}
+
+.general-form__submit{
+    width: 100%;
+    padding: 0.5rem;
+    @include flexbox(row,nowrap,space-around,center,0)
+}

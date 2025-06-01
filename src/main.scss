@@ -8,11 +8,17 @@
 @use './scss/base/fonts';
 @use './scss/base/helpers';
 @use './scss/base/typography';
+@use './scss/base/reset';
 
 // 3. Layout-related sections
 @use './scss/layout/footer';
 @use './scss/layout/header';
+@use './scss/layout/editor';
+@use './scss/layout/app';
+@use './scss/layout/canvas';
 
 // 4. Components
 @use './scss/components/button';
-@use './scss/components/app';
+
+
+

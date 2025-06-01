@@ -1,12 +1,19 @@
 import { useState } from 'react'
-import '../scss/components/_app.scss'
+import Header from './Header'
+import Editor from './Editor'
+import Canvas from './Canvas'
+import '../scss/layout/_app.scss';
 
 function App() {
-  
+
   return (
-    <>
-    <h1>CV Application</h1>
-    </>
+    <div id='app' className='app-container'>
+      <Header />
+      <div id='container' className='container'>
+        <Editor />
+        <Canvas />
+      </div>
+    </div>
   )
 }
 

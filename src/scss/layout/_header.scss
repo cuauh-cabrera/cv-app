@@ -1,3 +1,31 @@
+@use '../abstracts/' as *;
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.header{
+    width: $max-width;
+    padding: 0.5rem;
+    height: fit-content;
+    position: fixed;
+    margin-top: -1rem;
+    background-color: $main-color;
+    @include flexbox(row,nowrap,space-between,center,0) 
+}
+
+.header > img {
+    width: 8rem;
+}
+
+.header__nav {
+    width: fit-content;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    @include flexbox(column,nowrap,center,flex-end,1rem)
+}
+
+.header__nav > ul {
+    width: fit-content;
+    padding: 0.5rem;
+    @include flexbox(row,wrap,flex-end,center,1.5rem)
+}
