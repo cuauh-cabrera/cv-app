@@ -1,0 +1,23 @@
+
+@use '../abstracts';
+/* Custom CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul a,
+ol a {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: abstracts.$text-color;
+}
+
+ul li,
+ol li {
+  text-decoration: none;
+  list-style: none;
+}

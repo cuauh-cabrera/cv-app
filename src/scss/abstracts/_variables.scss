@@ -5,20 +5,35 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
+$text-font-stack: 'Lato', sans-serif !default;
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: rgb(253, 250, 246) !default;
+
+/// Secondary text color
+/// @type Color
+$secondary-text-color: rgb(255, 191, 120) !default;
+
+/// Canvas text color
+/// @type Color
+$canvas-text-color: rgb(10, 10, 10) !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$main-color: rgb(142, 122, 181)!default;
+
+/// Secondary color
+/// @type Color
+$secondary-color:rgb(183, 132, 183);
+
+/// Thirth color
+/// @type Color
+$thirth-color:rgb(228, 147, 179);
+
+/// Fourth color
+/// @type Color
+$fourth-color:rgb(238, 165, 166);
 
 /// Light grey
 /// @type Color
@@ -32,10 +47,17 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
+/// White Canvas
+$canvas-background: rgb(255, 255, 255);
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
+$max-width: 100vw !default;
+
+/// Container's maximum height
+/// @type Length
+$max-height: 90vh !default;
+
 
 
 /// Breakpoints map

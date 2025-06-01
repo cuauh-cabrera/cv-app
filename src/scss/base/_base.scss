@@ -27,11 +27,53 @@ html {
  * Basic styles for links
  */
 a {
-  color: abstracts.$brand-color;
+  color: abstracts.$secondary-text-color;
   text-decoration: none;
 
   @include abstracts.on-event {
-    color: abstracts.$text-color;
-    text-decoration: underline;
+    color: abstracts.$secondary-text-color;
+    text-decoration: none;
   }
+}
+
+/**
+ * Basic styles for document's body
+ */
+
+body {
+  width: abstracts.$max-width;
+  height: abstracts.$max-height;
+  background-color: abstracts.$main-color;
+}
+
+/**
+ * Basic styles for <h1> headers
+ */
+
+h1{
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+
+/**
+ * Basic styles for <h2> headers
+ */
+
+h2{
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+/**
+ * Basic styles for placeholders
+ */
+
+::placeholder {
+    font-size: 0.9rem;
+    color: abstracts.$mid-grey;
+    font-weight: 500;
+    line-height: 2rem;
 }

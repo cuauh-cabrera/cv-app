@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.app-container {
+    background-color:$main-color;
+    height: fit-content;
+    padding: 0.5rem;
+    @include flexbox (column,nowrap,flex-start,center,1rem)
+}
+
+.container{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    @include flexbox(row,nowrap,space-between,center,1rem)
+}
+
+
