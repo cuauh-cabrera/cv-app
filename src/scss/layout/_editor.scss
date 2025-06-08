@@ -6,7 +6,9 @@
     padding: 0.5rem;
     margin-top: 10rem;
     width: 50%;
-    height: 95vh;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     @include flexbox(column,wrap,center,flex-start,1rem)
 }
 
