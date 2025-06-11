@@ -1,8 +1,17 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../scss/layout/_editor.scss';
 import '../scss/components/_button.scss';
 
-const General = ({ generalInfo, eventHandler, isEditing, handleEdit, setIsEditing }) => {
+const General = ({ generalInfo, eventHandler }) => {
+    const [isEditing, setIsEditing] = useState(true);
+
+    // Handle the state for save and edit operations
+    const handleEdit = (event) => {
+        event.preventDefault();
+        setIsEditing(false);
+    };
+
     return (
         <section id="general" className="general-info">
             <h2>General Information</h2>

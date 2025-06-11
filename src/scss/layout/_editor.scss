@@ -1,26 +1,42 @@
 @use '../abstracts/' as *;
 
-.editor-container{
+.editor-container {
     border-color: $thirth-color;
     border-style: double;
     padding: 0.5rem;
     margin-top: 10rem;
     width: 50%;
-    height: 80vh;
+    height: auto;
     overflow-y: scroll;
     overflow-x: hidden;
-    @include flexbox(column,wrap,center,flex-start,1rem)
+    @include flexbox(column, wrap, center, flex-start, 1rem)
 }
 
-.general-info{
+.general-info {
     padding: 0.5rem;
     width: 100%;
-    @include flexbox(column,nowrap,center,flex-start,0.5rem)
+    overflow-y: scroll;
+    @include flexbox(column, nowrap, center, flex-start, 0.5rem)
 }
 
-.general-info > h2 {
+.general-info>h2 {
     width: 100%;
     padding-left: 1rem;
     text-align: start;
 }
 
+.profile-info {
+    width: 100%;
+    height: fit-content;
+    @include flexbox(column, nowrap, center, flex-start, 0.5rem)
+}
+
+.profile-info>h2 {
+    width: 100%;
+    padding-left: 1rem;
+    text-align: start;
+}
+
+.profile-info__form-wrapper {
+    width: 100%;
+}
