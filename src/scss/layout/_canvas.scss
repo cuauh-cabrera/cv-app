@@ -1,6 +1,6 @@
 @use '../abstracts/' as *;
 
-.canvas-container{
+.canvas-container {
     border-color: $secondary-color;
     border-style: double;
     background-color: $canvas-background;
@@ -9,20 +9,20 @@
     margin-top: 10rem;
     height: 80vh;
     overflow-y: scroll;
-    @include flexbox(column,nowrap,flex-start,center,0);
+    @include flexbox(column, nowrap, flex-start, center, 0);
 }
 
-.general-canvas{
+.general-canvas {
     width: 100%;
-    height: 95vh;
-    @include flexbox(column,nowrap,flex-start,center,0)
+    height: fit-content;
+    @include flexbox(column, nowrap, flex-start, center, 0)
 }
 
-.general-canvas > h1 {
+.general-canvas>h1 {
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
-    color:$canvas-text-color;
+    color: $canvas-text-color;
     text-align: center;
 }
 
@@ -34,9 +34,20 @@
     margin-top: 0;
 }
 
-.general-canvas > hr {
-    border-color:$light-grey;
+.general-canvas>hr {
+    border-color: $light-grey;
     border-width: 2px;
     width: 100%;
     margin-top: 1rem;
+}
+
+.profile-canvas {
+    width: 100%;
+    margin-top: 0.75rem;
+    height: fit-content;
+}
+
+.profile-canvas>p {
+    color: $canvas-text-color;
+    text-align: left;
 }

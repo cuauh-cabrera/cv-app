@@ -25,13 +25,13 @@ function App() {
     }));
   }
 
-  // Sets the state for the save and edit buttons in the General Information form
-  const [isEditing, setIsEditing] = useState(true);
+  // Sets the state for save and edit operations for the Professional Profile section
+  const [profileText, setProfileText] = useState('');
 
-  // Handles the state for save and edit operations for the General Information form
-  const handleEdit = (event) => {
-    event.preventDefault();
-    setIsEditing(false);
+  // Handles the state for save and edit operations for the Professional Profile section
+  const handleProfileText = (event) => {
+    event.preventDefault;
+    setProfileText(event.target.value);
   };
 
   return (
@@ -41,11 +41,12 @@ function App() {
         <Editor
           generalInfo={generalInfo}
           eventHandler={handleSetGeneralInfo}
-          isEditing={isEditing}
-          handleEdit={handleEdit}
-          setIsEditing={setIsEditing}
+          handleProfileText={handleProfileText}
         />
-        <Canvas generalInfo={generalInfo} />
+        <Canvas
+          generalInfo={generalInfo}
+          profileText={profileText}
+        />
       </div>
     </div>
   )
