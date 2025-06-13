@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import General from './General';
 import Profile from './Profile';
+import Experience from './Experience';
 import '../scss/layout/_editor.scss';
 import '../scss/layout/_forms.scss';
 
 
-const Editor = ({ generalInfo, eventHandler, isEditing, handleEdit, setIsEditing, profileText, handleProfileText }) => {
+const Editor = ({ generalInfo, eventHandler, isEditing, handleEdit, setIsEditing, profileText, handleProfileText, jobInfo, handleJobInfo }) => {
     return (
         <div id="editor" className="editor-container">
             <General
@@ -22,6 +23,10 @@ const Editor = ({ generalInfo, eventHandler, isEditing, handleEdit, setIsEditing
                 profileText={profileText}
                 handleProfileText={handleProfileText}
             />
+            <Experience
+                jobInfo={jobInfo}
+                handleJobInfo={handleJobInfo}
+            />
         </div>
     )
 };
@@ -32,7 +37,9 @@ Editor.propTypes = {
     isEditing: PropTypes.bool,
     handleEdit: PropTypes.func,
     setIsEditing: PropTypes.bool,
-    profileText: PropTypes.string
+    profileText: PropTypes.string,
+    jobInfo: PropTypes.object,
+    handleJobInfo: PropTypes.func
 }
 
 export default Editor;

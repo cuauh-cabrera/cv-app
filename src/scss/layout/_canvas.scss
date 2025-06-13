@@ -51,3 +51,46 @@
     color: $canvas-text-color;
     text-align: left;
 }
+
+.experience-canvas {
+    width: 100%;
+    height: fit-content;
+    @include flexbox(column, nowrap, flex-start, center, 0.5rem)
+}
+
+.experience-canvas>h2 {
+    width: 100%;
+    color: $canvas-text-color;
+    text-align: center;
+}
+
+.experience-canvas__role {
+    width: 100%;
+    height: fit-content;
+    color: $canvas-text-color;
+}
+
+.experience-canvas__dates {
+    width: 100%;
+    height: fit-content;
+    @include flexbox(row, nowrap, flex-start, center, 0)
+}
+
+.experience-canvas__dates>p {
+    width: 10%;
+    color: $canvas-text-color;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.experience-canvas__dates>span {
+    width: 2%;
+    color: $canvas-text-color;
+    text-align: center;
+}
+
+.experience-canvas__desc {
+    width: 100%;
+    color: $canvas-text-color;
+    text-align: start;
+}

@@ -12,7 +12,7 @@
     height: fit-content;
     padding: 1rem;
     overflow-y: scroll;
-    @include flexbox(row,nowrap,space-between,center,1rem)
+    @include flexbox(row,nowrap,space-between,flex-start,1rem)
 }
 
 

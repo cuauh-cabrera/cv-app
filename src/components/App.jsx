@@ -6,7 +6,7 @@ import '../scss/layout/_app.scss';
 
 function App() {
 
-  // Sets the state for each input in the General Information Section
+  // Handle the state for each input value in the General Information form
   const [generalInfo, setGeneralInfo] = useState({
     name: '',
     email: '',
@@ -16,7 +16,6 @@ function App() {
     linkedin: ''
   });
 
-  // Handles the state for each input value in the General Information form
   const handleSetGeneralInfo = (event) => {
     const { name, value } = event.target;
     setGeneralInfo((prev) => ({
@@ -25,14 +24,30 @@ function App() {
     }));
   }
 
-  // Sets the state for save and edit operations for the Professional Profile section
-  const [profileText, setProfileText] = useState('');
+  // Handle the state for save and edit operations for for text Boxes
+  const [textArea, setTextArea] = useState('');
 
-  // Handles the state for save and edit operations for the Professional Profile section
   const handleProfileText = (event) => {
     event.preventDefault;
-    setProfileText(event.target.value);
+    setTextArea(event.target.value);
   };
+
+  // Handle the state for each input in the Job Experience Information Section
+  const [jobInfo, setJobInfo] = useState({
+    company: '',
+    role: '',
+    startDate: '',
+    endDate: '',
+    description: ''
+  });
+
+  const handleJobInfo = (event) => {
+    const { name, value } = event.target;
+    setJobInfo((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  }
 
   return (
     <div id='app' className='app-container'>
@@ -42,10 +57,13 @@ function App() {
           generalInfo={generalInfo}
           eventHandler={handleSetGeneralInfo}
           handleProfileText={handleProfileText}
+          jobInfo={jobInfo}
+          handleJobInfo={handleJobInfo}
         />
         <Canvas
           generalInfo={generalInfo}
-          profileText={profileText}
+          profileText={textArea}
+          jobInfo={jobInfo}
         />
       </div>
     </div>
