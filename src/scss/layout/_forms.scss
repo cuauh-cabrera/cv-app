@@ -50,3 +50,31 @@
     width: 80%;
     padding: 1rem;
 }
+
+.experience-info__form {
+    width: 100%;
+    padding: 0.5rem;
+    @include flexbox(column, wrap, space-between, center, 1rem)
+}
+
+.experience-info__form-wrapper {
+    width: 100%;
+    padding: 0.5rem;
+    @include flexbox(row, wrap, space-between, flex-start, 0.75rem)
+}
+
+.experience-info__form-wrapper>label {
+    width: 100%;
+    padding: 0.5rem;
+    @include flexbox(row, nowrap, space-between, center, 0)
+}
+
+.experience-info__form-wrapper>label>input {
+    width: 80%;
+    padding: 1rem;
+}
+
+.experience-info__form-wrapper>label>textarea {
+    width: 80%;
+    padding: 1rem;
+}

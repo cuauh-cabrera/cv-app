@@ -13,7 +13,7 @@ const Profile = ({ profileText, handleProfileText }) => {
 
     return (
         <section id="profile" className="profile-info">
-            <h2>Professional Profile</h2>
+            <h2>Profile</h2>
             <form id="profile-form" className="profile-info__form" onSubmit={handleEdit}>
                 <div className="profile-info__form-wrapper">
                     <label htmlFor="profile-text" >Profile:

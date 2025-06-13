@@ -40,3 +40,15 @@
 .profile-info__form-wrapper {
     width: 100%;
 }
+
+.experience-info{
+    width: 100%;
+    height: fit-content;
+    @include flexbox(column,nowrap,center,flex-start,0.5rem)
+}
+
+.experience-info>h2{
+    width: 100%;
+    padding: 1rem;
+    text-align: start;
+}

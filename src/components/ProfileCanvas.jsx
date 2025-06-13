@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import '../scss/layout/_canvas.scss';
 import '../components/Profile';
 
-const ProfileCavnvas = ({ profileText }) => {
+const ProfileCanvas = ({ profileText }) => {
     return (
         <section id='profile-canvas' className='profile-canvas'>
             <p className='profile-canvas__text'>{profileText}</p>
@@ -10,8 +10,8 @@ const ProfileCavnvas = ({ profileText }) => {
     )
 }
 
-ProfileCavnvas.propTypes = {
+ProfileCanvas.propTypes = {
     profileText: PropTypes.string
 }
 
-export default ProfileCavnvas;
+export default ProfileCanvas;
